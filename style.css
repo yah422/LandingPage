@@ -465,7 +465,7 @@ figure img {
  #affichagePrix {
     background-color: rgb(221, 218, 218);
     width: 100%;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -493,7 +493,7 @@ figure img {
     font-size: small;
  }
 
- #choix {
+ .choix {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -502,12 +502,24 @@ figure img {
     gap: 60px;
  }
 
- #choix div {
+ .choix div {
     box-sizing: border-box;
     border-color:white;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
     display: flex;
-    width: 60px;
-    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .choix div h6 {
+  font-size: small;
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+
 
  }
