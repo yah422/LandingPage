@@ -409,7 +409,7 @@ input:focus-visible{
     align-content: center;
     justify-content: center;
     align-items: center;
-    filter: grayscale(60%);
+    filter: grayscale(80%);
     margin-bottom: 60px;
 }
 
