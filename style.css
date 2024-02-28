@@ -228,6 +228,10 @@ input:focus-visible{
     text-align: center;
 }
 
+#box:hover {
+    transform: translateY(-5px);
+}
+
 #box h5 {
     color: white;
     font-size: x-large;
@@ -336,7 +340,7 @@ input:focus-visible{
     height: 100px;
     background-color: transparent;
     position: absolute;
-    top: 0;
+    top: -40px;
     left: -40px;
     transition: 0.7s;
     margin-top: 80px;
@@ -348,11 +352,24 @@ input:focus-visible{
     align-items: flex-start;
     gap: 10px;
     
+    
+}
+
+.fa-brands{
+    color : black;
+    background-color: white;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .rs:hover {
     left: 0;
+    top: 0;
     
 }
 
@@ -518,11 +535,12 @@ input:focus-visible{
 .figBlog {
     position: relative;
     overflow: hidden;
-    filter: grayscale(100%);
+    filter: grayscale(0%); 
     transition: 0.5s;
 }
 .figBlog:hover{
-    filter: grayscale(0%); 
+    
+    filter: grayscale(100%);
 }
 .iconBlog {
     width: 400px;
@@ -530,13 +548,13 @@ input:focus-visible{
     background-color: transparent;
     position: absolute;
     top: 0;
-    left: -400px;
+    left: -100px;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 
 .iconBlog:hover {
