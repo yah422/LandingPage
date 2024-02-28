@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
 html,body{
     width: 100%;
     height: 100%;
@@ -15,6 +22,13 @@ main {
     justify-content: space-evenly;
     align-items: stretch;
 }
+
+.partieI p {
+    font-size: medium;
+    margin-top:  15px;
+    margin-bottom: 25px;
+
+}
 .partieII {
     background-color: white;
     color: black;
@@ -27,6 +41,7 @@ main {
 .partieII h4 {
     font-size: 30px;
     color: black;
+    margin-top: 25px;
 }
 
 .partieII p {
@@ -40,7 +55,8 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    
+    position: absolute;
+    top: 30px;    
   }
 
 nav { 
@@ -136,11 +152,23 @@ figure img {
     border-radius: 30px;
     background-color: rgba(207, 204, 204, 0.897);
     display: flex;
-    width: 435px;
+    width: 100%;
     height: 40px;
     position: relative;
+    padding-left: 20px;
 }
 
+input{
+    border: 0px;
+
+}
+
+input:focus-visible{
+    outline : 0px;
+}
+ #tailleform{
+    width: 100%;
+ }
 .sub{
     border-radius: 30px;
     background-color: #2b7bd6;
@@ -149,6 +177,17 @@ figure img {
     display: flex;
     width: 100px;
     height: 35px;
+    position: absolute;
+    right:0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+#taillesub {
+    width: 100%;
+    display: flex;
     position: absolute;
     right:0;
     flex-direction: row;
@@ -232,10 +271,9 @@ figure img {
     background-color: rgb(223, 219, 219);
     text-align: center;
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -248,6 +286,14 @@ figure img {
     color: rgb(99, 98, 98);
     font-family: "Poppins", sans-serif;
 }
+
+.equipe {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .textEquipe {
     color: black;
     font-family: "Poppins", sans-serif;
@@ -258,23 +304,62 @@ figure img {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: small;
+    margin-bottom: 40px;
 }
+#tetes {
+    position: relative;
+    overflow: hidden;
 
+}
 #tetes img {
     width: 150px;
     height: 150px;
     border-radius: 100px;
     filter: grayscale(100%);
+    transition: 0.5s;
+    
 }
+
+#tetes img:hover{
+    
+    filter: grayscale(0%);
+    
+}
+
+.rs {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    margin-top: 80px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    
+
+}
+
+.rs:hover {
+    left: 0;
+    
+}
+
 #photosEquipe {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 100px;
     max-width: 100%;
     height: auto;
 }
+
 #tetes aside {
     text-align: center;
     color: black;
@@ -292,6 +377,7 @@ figure img {
     font-size: x-small;
     margin-top: 0px;
 }
+
 
 .numbers {
     color: black;
@@ -324,6 +410,7 @@ figure img {
     justify-content: center;
     align-items: center;
     filter: grayscale(60%);
+    margin-bottom: 60px;
 }
 
 .parallax h3 {
@@ -342,10 +429,18 @@ figure img {
     background-color: transparent;
     color: white;
     font-size: medium;
+    border: solid;
+    color: white;
     width: 150px;
     height: 40px;
     border-color: white;
     border-radius: 5px;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.start:hover {
+    transform: translateY(-5px);
 }
 
 .dimension {
@@ -361,6 +456,7 @@ figure img {
     justify-content: center;
     align-items: center;
     margin: 30px;
+    gap: 40px;
 }
 
 .blog figure img {
@@ -420,6 +516,8 @@ figure img {
     width: 100px;
     height: 35px;
     text-align: center;
+    margin-top: 20px;
+
 }
 
 #I {
@@ -455,6 +553,7 @@ figure img {
     font-family: "Poppins", sans-serif;
     text-align: justify;
     color: rgb(90, 88, 88);
+    margin-bottom: 20px;
 
 }
 
@@ -465,7 +564,7 @@ figure img {
  #affichagePrix {
     background-color: rgb(221, 218, 218);
     width: 100%;
-    height: 600px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -485,12 +584,15 @@ figure img {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
  }
 
  #enonce p {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: small;
+    margin-bottom: 20px;
  }
 
  .choix {
@@ -499,7 +601,11 @@ figure img {
     align-content: center;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    gap: 25px;
+
+
  }
 
  .choix div {
@@ -507,8 +613,8 @@ figure img {
     border-color:white;
     border-radius: 10px;
     background-color: white;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,9 +623,31 @@ figure img {
  }
 
  .choix div h6 {
-  font-size: small;
+  font-size: medium;
   text-align: start;
   font-family: "Poppins", sans-serif;
+
+ }
+
+ .fa-thin fa-check{
+    width: 100px;
+    height: 100px;
+ }
+
+ .iconCheck {
+    width: 15px;
+    height: 15px;
+
+ }
+
+ .Join {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #2b7bd6;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
 
 
  }
