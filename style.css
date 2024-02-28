@@ -447,6 +447,8 @@ input:focus-visible{
 
 .start:hover {
     transform: translateY(-5px);
+    background-color: white;
+    color: black;
 }
 
 .dimension {
@@ -455,7 +457,7 @@ input:focus-visible{
 
 }
 
-.divFigures {
+#divFigures {
     display: flex;
     gap: 70px;
 }
@@ -513,6 +515,34 @@ input:focus-visible{
     color: #2b7bd6;
     font-size: small;
 }
+.figBlog {
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.figBlog:hover{
+    filter: grayscale(0%); 
+}
+.iconBlog {
+    width: 400px;
+    height: 150px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.iconBlog:hover {
+    left: 0 ;
+}
+
 
 #pricing {
     display: flex;
